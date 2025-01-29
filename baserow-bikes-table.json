@@ -1,0 +1,124 @@
+{
+  "name": "Bikes",
+  "fields": [
+    {
+      "name": "id",
+      "type": "number",
+      "primary": true
+    },
+    {
+      "name": "model",
+      "type": "text"
+    },
+    {
+      "name": "brand",
+      "type": "text"
+    },
+    {
+      "name": "type",
+      "type": "single_select",
+      "select_options": [
+        {
+          "value": "ROUTE",
+          "color": "blue"
+        },
+        {
+          "value": "VTT",
+          "color": "green"
+        },
+        {
+          "value": "ÉLECTRIQUE",
+          "color": "yellow"
+        },
+        {
+          "value": "VILLE",
+          "color": "purple"
+        },
+        {
+          "value": "HYBRIDE",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "name": "price",
+      "type": "number",
+      "number_decimal_places": 2,
+      "number_negative": false
+    },
+    {
+      "name": "stock",
+      "type": "number",
+      "number_decimal_places": 0,
+      "number_negative": false
+    },
+    {
+      "name": "image_url",
+      "type": "url"
+    },
+    {
+      "name": "description",
+      "type": "long_text"
+    },
+    {
+      "name": "frame",
+      "type": "text"
+    },
+    {
+      "name": "fork",
+      "type": "text"
+    },
+    {
+      "name": "groupset",
+      "type": "text"
+    },
+    {
+      "name": "brakes",
+      "type": "text"
+    },
+    {
+      "name": "wheels",
+      "type": "text"
+    },
+    {
+      "name": "tires",
+      "type": "text"
+    },
+    {
+      "name": "weight",
+      "type": "number",
+      "number_decimal_places": 2,
+      "number_negative": false
+    },
+    {
+      "name": "sizes",
+      "type": "text"
+    },
+    {
+      "name": "highlights",
+      "type": "long_text"
+    },
+    {
+      "name": "target_audience",
+      "type": "long_text"
+    },
+    {
+      "name": "usage",
+      "type": "long_text"
+    },
+    {
+      "name": "advantages",
+      "type": "long_text"
+    },
+    {
+      "name": "created_at",
+      "type": "date",
+      "date_include_time": true
+    },
+    {
+      "name": "updated_at",
+      "type": "last_modified",
+      "date_include_time": true
+    }
+  ]
+}

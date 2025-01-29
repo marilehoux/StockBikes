@@ -1,0 +1,55 @@
+{
+  "name": "Users",
+  "fields": [
+    {
+      "name": "id",
+      "type": "number",
+      "primary": true
+    },
+    {
+      "name": "email",
+      "type": "text",
+      "unique": true
+    },
+    {
+      "name": "password",
+      "type": "text"
+    },
+    {
+      "name": "first_name",
+      "type": "text"
+    },
+    {
+      "name": "last_name",
+      "type": "text"
+    },
+    {
+      "name": "role",
+      "type": "single_select",
+      "select_options": [
+        {
+          "value": "USER",
+          "color": "blue"
+        },
+        {
+          "value": "COLLABORATOR",
+          "color": "green"
+        },
+        {
+          "value": "ADMIN",
+          "color": "red"
+        }
+      ]
+    },
+    {
+      "name": "created_at",
+      "type": "date",
+      "date_include_time": true
+    },
+    {
+      "name": "updated_at",
+      "type": "last_modified",
+      "date_include_time": true
+    }
+  ]
+}
